@@ -1,0 +1,147 @@
+// typography
+@mixin text-transform() {
+	text-transform: lowercase;
+	letter-spacing: .05em;
+}
+
+@mixin text-link() {
+	text-decoration: underline;
+	@include text-underline-position(under);
+}
+
+body {
+	font-family: $font-primary;
+    font-size: calc((15px + (22 - 15) * ((100vw - 300px) / (1800 - 300))));
+	// font-size: calc([minimum size] + ([maximum size] - [minimum size]) * ((100vw - [minimum viewport width]) / ([maximum viewport width] - [minimum viewport width])));
+    
+    //font-size: $font-regular;
+    font-weight: $font-weight-light;
+	line-height: 1;
+	text-align: left;
+	
+	@include for-phone-only {
+		font-size: 15px !important;
+	}
+}
+
+strong {
+    font-weight: $font-weight-bold;
+}
+
+p,
+.paragraph {
+	font-size: $font-small;
+	line-height: $line-height-large;
+
+	&+p {
+		margin-top: $space-large;
+	}
+    
+    &.small {
+        font-size: $font-x-small;
+    }
+    
+    a {
+        @include text-link();
+    }
+	
+	@include for-phone-only {
+		font-size: $font-mobile-small;
+		
+		&+p {
+			margin-top: $space-mobile;
+		}
+	}
+}
+
+// colors
+.highlight {
+    color: $color-base;
+}
+
+// headlines
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+    font-family: $font-primary;
+    
+    a {
+        @include text-link();
+    }
+}
+
+.h1,
+.h2 {
+    font-weight: $font-weight-bold;
+}
+
+.h3,
+.h4,
+.h5,
+.h6 {
+    font-weight: $font-weight-light;
+}
+
+// sizes
+.h1 {
+	font-size: $font-xx-large;
+	line-height: $line-height-small;
+    
+    @include for-phone-only {
+		font-size: $font-mobile-large;
+        line-height: $line-height-small;
+	}
+}
+
+.h2 {
+	font-size: $font-x-large;
+	line-height: $line-height-small;
+	
+	@include for-phone-only {
+		font-size: calc(#{$font-mobile} * 1.25);
+        line-height: $line-height-small;
+	}
+}
+
+.h3 {
+    font-size: $font-large;
+	line-height: $line-height-regular;
+	
+	@include for-phone-only {
+		font-size: $font-mobile;
+        line-height: $line-height-regular;
+	}
+}
+
+.h4 {
+    font-size: $font-regular;
+	line-height: $line-height-regular;
+	
+	@include for-phone-only {
+		font-size: $font-mobile;
+        line-height: $line-height-regular;
+	}
+}
+
+.h5 {
+	font-size: $font-small;
+	line-height: $line-height-regular;
+    
+    @include for-phone-only {
+		font-size: $font-mobile-small;
+        line-height: $line-height-regular;
+	}
+}
+
+.h6 {
+    font-size: $font-x-small;
+	line-height: $line-height-regular;
+    
+    @include for-phone-only {
+		font-size: $font-mobile-small;
+        line-height: $line-height-regular;
+	}
+}

@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;800&display=swap');
+
+$font-primary: 'Montserrat', sans-serif;
+$font-secondary: 'Montserrat', sans-serif;
+
+$font-weight-light: 400;
+$font-weight-medium: 500;
+$font-weight-bold: 800;
+
+$font-regular: 1.25em;
+$font-xx-small: calc(#{$font-regular} * .6);
+$font-x-small: calc(#{$font-regular} * .7);
+$font-small: calc(#{$font-regular} * .8);
+$font-large: calc(#{$font-regular} * 1.15);
+$font-x-large: calc(#{$font-regular} * 1.75);
+$font-xx-large: calc(#{$font-regular} * 2.75);
+
+$line-height-regular: 1.5;
+$line-height-small: 1.25;
+$line-height-large: 1.75;
+
+$font-mobile: 1.25em;
+$font-mobile-small: calc(#{$font-mobile} * .85);
+$font-mobile-large: calc(#{$font-mobile} * 2);
+
+$space-regular: 1vmax;
+$space-xx-small: calc(#{$space-regular} * .5);
+$space-x-small: calc(#{$space-regular} * .65);
+$space-small: calc(#{$space-regular} * .85);
+$space-large: calc(#{$space-regular} * 1.5);
+$space-x-large: calc(#{$space-regular} * 3);
+$space-xx-large: calc(#{$space-regular} * 6);
+
+$space-mobile: 2vmax;
+$space-mobile-xx-small: calc(#{$space-mobile} * .3);
+$space-mobile-x-small: calc(#{$space-mobile} * .6);
+$space-mobile-small: calc(#{$space-mobile} * .9);
+$space-mobile-large: calc(#{$space-mobile} * 1.5);
+$space-mobile-x-large: calc(#{$space-mobile} * 2.5);
+$space-mobile-xx-large: calc(#{$space-mobile} * 3.5);
+
+$width-1: 8.33%;
+$width-2: 16.66%;
+$width-3: 24.99%;
+$width-4: 33.32%;
+$width-5: 41.65%;
+$width-6: 49.98%;
+$width-7: 58.31%;
+$width-8: 66.64%;
+$width-9: 74.97%;
+$width-10: 83.33%;
+$width-11: 91.63%;
+$width-12: 100%;
+
+$margin-size-h: 7.14vw; // left, right
+$margin-size-v: 3.7vw; // top, bottom
+
+$width-gap: $margin-size-h;
+$width-sidebar: $width-4;
+$width-content: $width-8;
+
+$border-radius-small: .15em;
+$border-radius-regular: $border-radius-small;
+$border-radius-large: 1.25em;
+
+$button-border-size: .1em;
+
+// colours - start
+$white: #{'rgb(255,255,255)'};
+$white-opacity: #{'rgba(255,255,255,.5)'};
+
+$black: #{'rgba(0,0,0)'};
+$black-opacity: #{'rgba(0,0,0.3)'};
+
+$grey-dark: #{'rgb(46, 46, 46)'};
+$grey-dark-opacity: #{'rgba(46,46,46,.25)'};
+
+$medium-grey: #{'rgb(124,124,124)'};
+$medium-grey-opacity: #{'rgba(124,124,124,.2)'};
+
+$cold-grey: #{'rgb(245,251,252)'};
+$red: #{'rgb(237,36,38)'};
+$dark-red: #{'rgb(175,34,41)'};
+
+$color-base: $grey-dark;
+$color-base-opacity: $grey-dark-opacity;
+
+$color-base-shade: $black;
+$color-base-shade-opacity: $black-opacity;
+
+$color-content: $white;
+$color-content-opacity: $white-opacity;
+
+$color-content-shade: $cold-grey;
+$color-content-shade-opacity: $cold-grey;
+
+$color-brand: $red;
+$color-brand-opacity: $dark-red;
+
+$color-brand-shade: $medium-grey;
+$color-brand-shade-opacity: $medium-grey;
+
+$color-extra: #{'rgba(255, 255, 255, .5)'};
+// colours - end
+
+// components
+/*
+$margin-size-h: 12vmax; // left, right
+$margin-size-v: 10vmax; // top, bottom
+*/
+
+$margin-size-h: 7.14vw; // left, right
+$margin-size-v: 3.7vw; // top, bottom
+
+$button-size: 3em;
+$button-size-mobile: 8vmax;
+$button-padding: 1em;
+
+$button-font-family: $font-primary;
+$button-font-size: $font-xx-small;
+$button-font-size-mobile: $font-mobile-small;
+$button-font-weight: $font-weight-medium;
+
+$button-color: $color-content;
+$button-background: $color-brand;
+$button-extra: $color-base;
+
+$border-radius-button: $border-radius-small;
+
+$flickity-prev-next-button: calc(#{$button-size} * .5);
+$flickity-prev-next-button-mobile: calc(#{$button-size-mobile} * .5);
+
+// notification colors - start
+$color-info: #{'rgb(0, 82, 204)'}; // blue
+$color-invalid: #{'rgb(255, 204, 0)'}; // yellow
+$color-warning: #{'rgb(255, 139, 0)'}; // orange
+$color-danger: #{'rgb(207, 61, 59)'}; // red
+$color-success: #{'rgb(0, 135, 90)'}; // green
+// notification colors - end
