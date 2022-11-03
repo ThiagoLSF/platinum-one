@@ -59,7 +59,7 @@
 	
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	<script src="<?php bloginfo('template_directory'); ?>/assets/scripts/script.page-header.js"></script>
-	<script src="https://kit.fontawesome.com/4d32f8de02.js" crossorigin="anonymous"></script>
+	<script src="https://kit.fontawesome.com/52680288f1.js" crossorigin="anonymous"></script>
 
 	<!-- icons -->
     <link rel="apple-touch-icon" sizes="180x180" href="<?php bloginfo('template_directory'); ?>/assets/icons/apple-touch-icon.png">
