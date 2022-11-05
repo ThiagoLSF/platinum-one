@@ -883,7 +883,7 @@
                 left: 0;
                 
                 &:before {
-                    content: '';
+                    content: ''; 
                     position: absolute;
                     z-index: 100;
                     top: 0;
@@ -896,7 +896,24 @@
             
             .box-image {
                 img {
-                    opacity: .5;
+
+                    &.portrait {
+                        opacity: 0;
+                    }
+
+                    &.landscape {
+                        opacity: .5;
+                    }
+
+                    @include for-phone-only {
+                        &.portrait {
+                            opacity: .5;
+                        }
+
+                        &.landscape {
+                            opacity: 0;
+                        }
+                    }
                 }
             }
             
