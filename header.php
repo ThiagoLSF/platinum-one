@@ -55,7 +55,7 @@
 	} ?></title>
 	*/ ?>
     
-	<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/assets/style/style.css">
+	<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/assets/style/style.css?v=9">
 	
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	<script src="<?php bloginfo('template_directory'); ?>/assets/scripts/script.page-header.js"></script>
